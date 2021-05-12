@@ -1,0 +1,79 @@
+@media screen and (max-width: 768px) {
+    .heading__hero{
+        position: relative;
+        right: 270px;
+        bottom: 100px;
+    } 
+
+    h1{
+        font-size: 2em !important;
+    }
+    
+    .header{
+        background-position: top;
+    }
+
+    .button{
+        position: relative;
+        bottom: 20px;
+        left: 8px;
+    }
+    .btn-2{
+         position: relative;
+         bottom: 50px;
+    }
+
+   .about{
+
+       &__col-1{
+          
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+        word-break: break-word;
+        position: relative;
+        right: 8rem;
+        font-size: 0.5em;
+    }
+   }
+   
+   .testimonials__header{
+    color: red;
+    text-align: center;
+    font-family:sans-serif;
+    //margin-top: 0rem;
+
+}
+
+   .testimonials__p{
+    margin-top: -1rem;
+    font-size: 8px;
+    font-weight: 400;
+    //margin-left: 6rem;
+    color: red;
+    text-align: center;
+    font-family:sans-serif; 
+    position: relative;
+    right: 3rem;
+}
+
+.testimonials__name{
+   color: #4d8cf5;
+   text-align: center;
+   font-family:sans-serif;
+}
+.services__column{
+   position: relative;
+   right: 3.5rem;
+}
+.btn-form{
+    position: relative;
+    left: 42px;
+    margin-top: 40px;
+}
+}
+
+
+

@@ -1,0 +1,11 @@
+.footer{
+    padding-top: 22px;
+    padding-bottom: 22px;
+    background-color: #222 !important;
+    text-align: center;
+
+    &__item{
+        position: relative;
+        left: 29.5rem;
+    }
+}

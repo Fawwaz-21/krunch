@@ -1,0 +1,350 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+  -webkit-text-size-adjust: 100%;
+}
+
+.header {
+  background-image: -webkit-gradient(linear, right top, left top, from(rgba(0, 0, 0, 0.75)), to(rgba(0, 0, 0, 0.75))), url(../images/hero2.jpg);
+  background-image: linear-gradient(270deg, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(../images/hero2.jpg);
+  height: 100vh;
+  background-size: cover;
+}
+
+.header__brand-heading {
+  color: whitesmoke;
+  font-weight: 600;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.header__brand-heading:hover {
+  color: #006699;
+}
+
+.navbar.is-transparent {
+  background-color: transparent;
+  background-image: none;
+}
+
+.navbar-item:hover {
+  color: #006699 !important;
+}
+
+.navbar-item {
+  color: whitesmoke !important;
+}
+
+.heading__primary {
+  color: whitesmoke;
+  text-transform: uppercase;
+  text-align: center;
+  position: absolute;
+  top: 8rem;
+  left: 21rem;
+}
+
+.heading__primary__primary-main {
+  display: block;
+  letter-spacing: 3.5rem;
+  line-height: 28px;
+}
+
+.heading__primary__primary-sub {
+  display: block;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 1.75rem;
+  line-height: 28px;
+}
+
+h1 {
+  font-size: 3em !important;
+}
+
+.btn-txt {
+  color: whitesmoke !important;
+}
+
+.btn-hover:hover {
+  background-color: #393e46 !important;
+}
+
+@media screen and (max-width: 768px) {
+  .heading__hero {
+    position: relative;
+    right: 270px;
+    bottom: 100px;
+  }
+  h1 {
+    font-size: 2em !important;
+  }
+  .header {
+    background-position: top;
+  }
+  .button {
+    position: relative;
+    bottom: 20px;
+    left: 8px;
+  }
+  .btn-2 {
+    position: relative;
+    bottom: 50px;
+  }
+  .about__col-1 {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    word-break: break-word;
+    position: relative;
+    right: 8rem;
+    font-size: 0.5em;
+  }
+  .testimonials__header {
+    color: red;
+    text-align: center;
+    font-family: sans-serif;
+  }
+  .testimonials__p {
+    margin-top: -1rem;
+    font-size: 8px;
+    font-weight: 400;
+    color: red;
+    text-align: center;
+    font-family: sans-serif;
+    position: relative;
+    right: 3rem;
+  }
+  .testimonials__name {
+    color: #4d8cf5;
+    text-align: center;
+    font-family: sans-serif;
+  }
+  .services__column {
+    position: relative;
+    right: 3.5rem;
+  }
+  .btn-form {
+    position: relative;
+    left: 42px;
+    margin-top: 40px;
+  }
+}
+
+.about {
+  margin-top: 5.5rem;
+}
+
+.about__heading {
+  text-align: center;
+  font-weight: 600;
+  font-size: 2em;
+}
+
+.about__col-1 {
+  font-size: 15px;
+  font-weight: 400;
+  margin-left: 8rem;
+}
+
+.hr {
+  display: block;
+  width: 70px;
+  height: 2px;
+  margin-top: 20px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #4d8cf5;
+}
+
+.portfolio {
+  margin-top: 5.5rem;
+  text-align: center;
+  /* &__img:hover{
+        opacity: 0.6;
+        background-color: aqua;
+        transition: opacity 500ms ease 0s;
+    } */
+}
+
+.portfolio__heading {
+  text-align: center;
+  font-weight: 600;
+  font-size: 2em;
+}
+
+.portfolio__img {
+  width: 350px;
+  height: 250px;
+  display: block;
+}
+
+.portfolio__overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  -webkit-transition: opacity 500ms ease 0s;
+  transition: opacity 500ms ease 0s;
+  background-color: rgba(69, 134, 241, 0.4);
+}
+
+.portfolio__text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.column {
+  position: relative;
+  width: 100%;
+}
+
+.column:hover .portfolio__overlay {
+  opacity: 1;
+}
+
+.testimonials {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7))), url(../images/testimonials-img.jpg);
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.7)), url(../images/testimonials-img.jpg);
+  max-height: 450px;
+  background-position: 0px 0px, 50% 50%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+  text-transform: uppercase;
+}
+
+.testimonials__header {
+  color: whitesmoke;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+.testimonials__p {
+  font-size: 15px;
+  font-weight: 400;
+  margin-left: 6rem;
+  color: whitesmoke;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+.testimonials__name {
+  color: #4d8cf5;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+.services__heading {
+  text-align: center;
+  font-weight: 600;
+  font-size: 2em;
+}
+
+.services__heading__icon {
+  font-size: 100px;
+  font-family: 'Fontawesome webfont', sans-serif;
+}
+
+.services__heading__header {
+  font-family: sans-serif;
+}
+
+.fontawesome-icons {
+  color: #4d8cf5;
+  font-size: 36px;
+  line-height: 1;
+}
+
+.fontawesome-icons-social {
+  background-color: grey;
+  color: white;
+  font-size: 25px;
+  text-align: center;
+}
+
+.fontawesome-icons-social:hover {
+  background-color: white;
+  color: #4d8cf5;
+}
+
+.team__heading {
+  text-align: center;
+  font-weight: 600;
+  font-size: 2em;
+}
+
+.team__img {
+  width: 400px;
+  height: 400px;
+  display: block;
+}
+
+.team__overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 98%;
+  width: 97%;
+  opacity: 0;
+  -webkit-transition: opacity 500ms ease 0s;
+  transition: opacity 500ms ease 0s;
+  background-color: rgba(46, 85, 148, 0.4);
+}
+
+.team__text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.column {
+  position: relative;
+  width: 100%;
+}
+
+.column:hover .team__overlay {
+  opacity: 1;
+}
+
+.footer {
+  padding-top: 22px;
+  padding-bottom: 22px;
+  background-color: #222 !important;
+  text-align: center;
+}
+
+.footer__item {
+  position: relative;
+  left: 29.5rem;
+}
+/*# sourceMappingURL=main.css.map */

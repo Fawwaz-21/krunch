@@ -1,0 +1,31 @@
+.testimonials{
+    background-image: linear-gradient(
+        180deg, rgba(0, 0, 0, .7) ) ,  
+    url(../images/testimonials-img.jpg);
+    max-height: 450px;
+    background-position: 0px 0px, 50% 50%;
+    background-size: auto, cover;
+    background-repeat: repeat, no-repeat;
+    text-transform: uppercase;
+
+    &__header{
+        color: whitesmoke;
+        text-align: center;
+        font-family:sans-serif;
+    }
+
+    &__p{
+        font-size: 15px;
+        font-weight: 400;
+        margin-left: 6rem;
+        color: whitesmoke;
+        text-align: center;
+        font-family:sans-serif;
+    }
+
+    &__name{
+       color: #4d8cf5;
+       text-align: center;
+       font-family:sans-serif;
+    }
+}
